@@ -1,1 +1,32 @@
 
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+import numpy as np
+image=pd.read_csv(r'C:\Users\morva\Documents\Python Scripts\Kaggle\trainLabels.csv')
+
+image.info()
+
+#<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 50000 entries, 0 to 49999
+Data columns (total 2 columns):
+id       50000 non-null int64
+label    50000 non-null object
+dtypes: int64(1), object(1)
+memory usage: 781.4+ KB
+
+image.describe()
+
+# 
+id
+count	50000.000000
+mean	25000.500000
+std	14433.901067
+min	1.000000
+25%	12500.750000
+50%	25000.500000
+75%	37500.250000
+max	50000.000000
+
+
+
